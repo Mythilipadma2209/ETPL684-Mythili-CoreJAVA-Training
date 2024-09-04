@@ -1,0 +1,10 @@
+							Interfaces
+1.Interface is a keyword.
+2.We can declare methods signatures only but not implementations.
+3.By default all interface methods are abstract.
+4.If any class implements interface that class should override all interface methods otherwise the class will be showing compile time error.
+5.We cannot create objects to interface, but we can create references to interface.
+6.We can declare variables inside the interface all are public static final.
+7. Java will support Multiple inheritance through interface.
+8. One class can implements more than one interface.
+9.One interface can extend other interface.

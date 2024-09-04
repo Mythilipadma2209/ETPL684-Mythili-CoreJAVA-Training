@@ -1,0 +1,26 @@
+								Constructor
+
+
+->	Class name and Constructor name should be Same
+
+-> They are 2 types of Classes 
+A.Default constructors
+B.Parameterized constructors
+
+-> We can Access constructors while creation of objects
+
+-> Constructors are mainly for initializing.
+
+-> Constructors doesn’t have any returntype not even void also.if we declare as 
+   a void the compiler will consider it as a method not as a constructors.
+   
+-> Every class needs atleast one Constructors.
+
+->Always constructors are overloaded.
+
+->this and super keyword.
+		this---- keyword is always pointing to instance variable.
+                        this can be use to call one constructor to another constructor (within a class)
+        Super----- Keyword always it will call super class constructor 
+        
+-> Copy Constructor ----- Object reference is copied & calls the constructor

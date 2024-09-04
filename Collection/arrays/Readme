@@ -1,0 +1,8 @@
+
+
+
+The Arrays.sort() method in Java is a powerful and efficient way to sort arrays. 
+It's part of the java.util package and can be used to sort both primitive and 
+object arrays. Depending on the type of array, Arrays.sort() 
+uses different sorting algorithms optimized for performance,
+ like QuickSort, MergeSort, or TimSort.
