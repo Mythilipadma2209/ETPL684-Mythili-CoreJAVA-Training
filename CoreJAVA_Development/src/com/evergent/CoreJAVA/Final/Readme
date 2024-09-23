@@ -1,0 +1,8 @@
+   					Final
+   					
+1.final is a Keyword.
+2.We can declare final as Variables, Methods & Class.
+3.Final variables can not be modify.
+4.Final methods can not be Override.
+5.Final Class can not be extends (Inherited).
+6.Final variable can be initialized while constructor calling.

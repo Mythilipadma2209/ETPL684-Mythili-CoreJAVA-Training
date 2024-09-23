@@ -1,0 +1,11 @@
+Exception Handling
+The application uses both predefined and user-defined exceptions to handle errors gracefully
+
+1. InvalidBookSelectionException(User-defined): 
+                    Thrown when an invalid book submodule or menu code is selected.
+2. InvalidReservationSelectionException (User-defined): 
+					Thrown when an invalid reservation code is selected,
+3. NumberFormatException(Predefined):
+ 					Handles invalid numeric input.
+4. InputMismatchException(Predefined): 
+					Catches invalid input types, ensuring correct data types are provided.

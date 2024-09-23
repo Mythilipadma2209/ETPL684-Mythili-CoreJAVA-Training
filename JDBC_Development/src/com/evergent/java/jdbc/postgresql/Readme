@@ -1,0 +1,126 @@
+Server [localhost]:         (Enter)
+Database [postgres]:        (Enter)
+Port [5432]:                (Enter)
+Username [postgres]:        (Enter)
+Password for user postgres:  root or system or admin (whatever you give while install
+
+
+// Create Data base
+postgres=# create database mythilidb1;
+CREATE DATABASE
+
+// User Creation 
+postgres=# CREATE USER mythili1 WITH PASSWORD 'mythili1';
+
+grant all privileges on database mythilidb1 to mythili1;
+
+GRANT CREATE ON SCHEMA public TO mythili1;
+
+postgres=#
+
+
+GRANT TEMPORARY, CONNECT ON DATABASE myramdb1 TO PUBLIC;
+GRANT ALL ON DATABASE mythilidb1 TO postgres;
+GRANT ALL ON DATABASE mythilidb1 TO mythili1;
+GRANT SELECT ON COMPANY1 TO mythili1;
+ALTER DEFAULT PRIVILEGES GRANT ALL ON TABLES TO mythili1;
+
+CREATE TABLE COMPANY1
+(
+    ID INT PRIMARY KEY     NOT NULL,
+    NAME TEXT              NOT NULL,
+    AGE INT                NOT NULL,
+    ADDRESS CHAR(50),
+    SALARY REAL
+);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (1, 'Ramu', 30, '123 Hello Streat', 50000.00);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (2, 'Babu', 25, '456 Oak Avenue', 60000.00);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (3, 'Mohan', 40, '789 Pine Road', 70000.00);
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------//------------------
+-- Database: myramdb1
+
+-- DROP DATABASE IF EXISTS myramdb1;
+
+CREATE DATABASE myramdb1
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_India.1252'
+    LC_CTYPE = 'English_India.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+GRANT SELECT ON COMPANY1 TO ramkumar1;
+GRANT TEMPORARY, CONNECT ON DATABASE myramdb1 TO PUBLIC;
+
+
+
+
+
+
+GRANT ALL ON DATABASE myramdb1 TO postgres;
+
+GRANT ALL ON DATABASE myramdb1 TO ramkumar1;
+
+CREATE TABLE COMPANY1
+(
+    ID INT PRIMARY KEY     NOT NULL,
+    NAME TEXT              NOT NULL,
+    AGE INT                NOT NULL,
+    ADDRESS CHAR(50),
+    SALARY REAL
+);
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (1, 'Ramu', 30, '123 Hello Streat', 50000.00);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (2, 'Babu', 25, '456 Oak Avenue', 60000.00);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (3, 'Mohan', 40, '789 Pine Road', 70000.00);
+select * from company1;
+ALTER DEFAULT PRIVILEGES GRANT ALL ON TABLES TO ramkumar1;
+ALTER DEFAULT PRIVILEGES GRANT ALL ON TABLES TO myramdb1;
+
+
+
+
+GRANT ALL ON DATABASE myramdb2 TO postgres;
+
+GRANT ALL ON DATABASE myramdb2 TO ramkumar2;
+
+use myramdb2;
+
+CREATE USER ramkumar2 WITH PASSWORD 'ramkumar2';
+CREATE TABLE COMPANY2
+(
+    ID INT PRIMARY KEY     NOT NULL,
+    NAME TEXT              NOT NULL,
+    AGE INT                NOT NULL,
+    ADDRESS CHAR(50),
+    SALARY REAL
+);
+
+INSERT INTO COMPANY1 (ID, NAME, AGE, ADDRESS, SALARY) 
+VALUES (1, 'Ramu', 30, '123 Hello Streat', 50000.00);
+
+
+select * from company1;
